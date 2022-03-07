@@ -1,14 +1,14 @@
-from nose.tools import *
+# from nose.tools import *
 import NAME
 
 
 def setup():
-    print("SETUP!")
+    print("TESTS SETUP!")
 
 
 def teardown():
-    print("TEAR DOWN!")
+    print("TESTS TEAR DOWN!")
 
 
 def test_basic():
-    print("I RAN!", end='')
+    print("I RAN TESTS!", end='')

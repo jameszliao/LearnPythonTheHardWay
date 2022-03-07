@@ -1,24 +1,18 @@
-<html>
-    <head>
-        <title>
-            Azure SDK Python
-        </title>
-    </head>
+{% extends "layout.html" %}
 
-    <body>
+{% block content %}
 
-        {% if greeting %}
+{% if greeting %}
+
+    I just want to say: 
+    <strong>
+        {{greeting}}
+    </strong>
+
+{% else %}
+
+    There is no greeting :(
         
-            I just want to say: 
-            <strong>
-                {{greeting}}
-            </strong>
+{% endif %}
 
-        {% else %}
-
-            There is no greeting :(
-                
-        {% endif %}
-
-    </body>
-</html>
+{% endblock %}

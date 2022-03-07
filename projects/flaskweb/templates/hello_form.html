@@ -1,33 +1,27 @@
-<html>
-    <head>
-        <title>
-            Azure SDK Python Form
-        </title>
-    </head>
+{% extends "layout.html" %}
 
-    <body>
+{% block content %}
 
-        <h1>
-            Fill out this form
-        </h1>
+<h1>
+    Fill out this form
+</h1>
 
-        <form action="/hello" method="POST">
+<form action="/hello" method="POST">
 
-            A Greeting:
-            
-            <input type="text" name="greet">
-            
-            <br/>
-            
-            Your name:
-            
-            <input type="text" name="name">
+    A Greeting:
+    
+    <input type="text" name="greet">
+    
+    <br/>
+    
+    Your name:
+    
+    <input type="text" name="name">
 
-            <br/>
+    <br/>
 
-            <input type="submit">
+    <input type="submit">
 
-        </form>
+</form>
 
-    </body>
-</html>
+{% endblock %}
